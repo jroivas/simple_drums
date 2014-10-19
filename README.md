@@ -7,15 +7,15 @@ Supports USB pluggable Rock Band drum set.
 
 On Debian/Ubuntu based system:
 
-$ sudo apt-get install qtbase5-dev qtmultimedia5-dev libqt5multimedia5-plugins
+  $ sudo apt-get install qtbase5-dev qtmultimedia5-dev libqt5multimedia5-plugins
 
 
 Build qtgamepad:
 
-$ sudo apt-get install libudev-dev
-$ git clone https://github.com/nezticle/qtgamepad
-$ cd qtgamepad
-$ qmake && make
+  $ sudo apt-get install libudev-dev
+  $ git clone https://github.com/nezticle/qtgamepad
+  $ cd qtgamepad
+  $ qmake && make
 
 
 If you have error about "Missing CMake tests", add this line to all .pro files under qtgamepad:
@@ -25,9 +25,10 @@ If you have error about "Missing CMake tests", add this line to all .pro files u
 
 ## Build
 
-$ qmake
-$ make
+
+  $ qmake
+  $ make
 
 ## Run
 
-$ LD_LIBRARY_PATH=./qtgamepad/lib ./simple_drums
+  $ LD_LIBRARY_PATH=./qtgamepad/lib ./simple_drums
